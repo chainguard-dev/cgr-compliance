@@ -1,0 +1,377 @@
+{
+  "matches": [],
+  "source": {
+    "type": "image",
+    "target": {
+      "userInput": "cgr.dev/chainguard-private/node:latest-dev",
+      "imageID": "sha256:d40b2c40fc580cfb9a69ae5c484f93e723f807a47992ed2ba78b8689b5303acb",
+      "manifestDigest": "sha256:27e0c3fffc8487d6eeaf1f9bdc269fee55a0768cd4528c0cd5c195744477fdcd",
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "tags": [],
+      "imageSize": 709588337,
+      "layers": [
+        {
+          "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+          "digest": "sha256:46f883eb38a69a4cd02f6dab6a6258599c83e1d6d29b81f958fa7ea069030ed9",
+          "size": 378628212
+        },
+        {
+          "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+          "digest": "sha256:10bcadb623c8223e4221e164f4936c927b4c6b5727281405bd41a1d28f1cd517",
+          "size": 89460216
+        },
+        {
+          "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+          "digest": "sha256:e3fdf4e7ff54a494ba10fd52adccdc866a545504eda051221b5b984754560d5a",
+          "size": 62346983
+        },
+        {
+          "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+          "digest": "sha256:1a0529a7db9154b32aee886955e1f408b10eea76cada90f57e0891f8b492ef72",
+          "size": 45154083
+        },
+        {
+          "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+          "digest": "sha256:8873862e4ab3a82c0f90482d84cab3a81f05d8dbd745ad9462e009bee23dcec6",
+          "size": 40943048
+        },
+        {
+          "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+          "digest": "sha256:b2817f0ad00ca8f29d53cb10e7395e43b425dd9114d09db3c133e1c943d329b8",
+          "size": 18482924
+        },
+        {
+          "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+          "digest": "sha256:bd6852a4b551b4de5d281ed1cd6e9ec74c220be6dc9a45e402e2e58eb8c387c2",
+          "size": 8278319
+        },
+        {
+          "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+          "digest": "sha256:ee12d3ee16f4406c26d1c375ea5e7b172e19a039c28855d9ebe10061dd517643",
+          "size": 8812737
+        },
+        {
+          "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+          "digest": "sha256:b372b22a31c987c4de6ca710f94fa12a31a591d18faf44644187c101276dc4cf",
+          "size": 7268803
+        },
+        {
+          "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+          "digest": "sha256:3dd942649080b5c5504bdd7cd3c42d72a40b83b09361e99d60fc2dd878ad493d",
+          "size": 49830358
+        },
+        {
+          "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+          "digest": "sha256:bedf4a3787094e3cf6b49d84b77b006549ffa61cf2cc725c7676f2caa6eb7e79",
+          "size": 382654
+        }
+      ],
+      "manifest": "eyJzY2hlbWFWZXJzaW9uIjoyLCJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQub2NpLmltYWdlLm1hbmlmZXN0LnYxK2pzb24iLCJjb25maWciOnsibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLm9jaS5pbWFnZS5jb25maWcudjEranNvbiIsInNpemUiOjI4NzQsImRpZ2VzdCI6InNoYTI1NjpkNDBiMmM0MGZjNTgwY2ZiOWE2OWFlNWM0ODRmOTNlNzIzZjgwN2E0Nzk5MmVkMmJhNzhiODY4OWI1MzAzYWNiIn0sImxheWVycyI6W3sibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLm9jaS5pbWFnZS5sYXllci52MS50YXIrZ3ppcCIsInNpemUiOjE0MTMzMjU0NywiZGlnZXN0Ijoic2hhMjU2Ojk5MWRkZmFiOGI2MDQ5ZWQ3YWZlYzQ0MWJlNDE5YzE1ZTc3NDU0YjI0ZTlkYWQ1OGQwNDUxZWNlOGFkNmQ2NDgifSx7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5vY2kuaW1hZ2UubGF5ZXIudjEudGFyK2d6aXAiLCJzaXplIjozMTU0OTYzMSwiZGlnZXN0Ijoic2hhMjU2OjAxNzkyYzljZmQxMGQzOTE5MjExN2JiOGIwYTdjYTNlMTYzNTNjOWM3YTI2ZmI5YjE2ZTFjNWQ5NTMxMDllNjMifSx7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5vY2kuaW1hZ2UubGF5ZXIudjEudGFyK2d6aXAiLCJzaXplIjoyNDAwMDg0OSwiZGlnZXN0Ijoic2hhMjU2OjU4ZjdkMGQzN2MwODljNTJjMDNhMjJjOWZkYjYzMTQ1ZmE0Y2I0ODYxNDQzZGU0ZDZjNThjZTYzNDNhNmY3OWQifSx7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5vY2kuaW1hZ2UubGF5ZXIudjEudGFyK2d6aXAiLCJzaXplIjoxODE0NDIzMCwiZGlnZXN0Ijoic2hhMjU2OjVkOGRhOTkzZjJlNmNhZDI0Nzc5MTk1YzQ0ZTIyMzFlZDhlMDA1YWIyMTc1YTNhNTczYmJkZjkyNTU1NTRhZjEifSx7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5vY2kuaW1hZ2UubGF5ZXIudjEudGFyK2d6aXAiLCJzaXplIjoxNjk5NDQzNSwiZGlnZXN0Ijoic2hhMjU2OjJjMWMzYWM0YzUyM2RlNjE3MzI1MjNkODZlMDI2ZDFkOWYxMGJkYzgwMTI1NDY3NTcxMGJiNmNlNDM4ZjkxY2EifSx7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5vY2kuaW1hZ2UubGF5ZXIudjEudGFyK2d6aXAiLCJzaXplIjo5MTk4MDExLCJkaWdlc3QiOiJzaGEyNTY6M2Q5NGRkY2ZkNjlhYjc4ZmQxMWI3YjFlNDI4MWMwNGMzZjU1MzgwY2VkYzg3MDRlMGNiMGRlZGY5ZjdkMTUxMiJ9LHsibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLm9jaS5pbWFnZS5sYXllci52MS50YXIrZ3ppcCIsInNpemUiOjIzNzY2NzQsImRpZ2VzdCI6InNoYTI1Njo1OGRiYTJhNDRkM2QzZjBmZGNkMjdlOTc2NDlhZTY1OTc3YWNhNjAyNjc3MTNlM2YxYjNhNGU4YjUwNjM5Y2M5In0seyJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQub2NpLmltYWdlLmxheWVyLnYxLnRhcitnemlwIiwic2l6ZSI6MTk2MTA4NSwiZGlnZXN0Ijoic2hhMjU2OmUyYWUzZDQ5YzI4N2JiMmVhODRlYWY0OWYzMTVmODRmNmE4NjE2NjFhNTI1MzM4ZDhiODQ5OWU2NGFiZTM5YzIifSx7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5vY2kuaW1hZ2UubGF5ZXIudjEudGFyK2d6aXAiLCJzaXplIjoyMDMxMTEyLCJkaWdlc3QiOiJzaGEyNTY6ODZjNTM1YjNmNjIyNDViNGU1NWYwNTQ5Y2U3NjZhMzRjODBlNWMwYzM4YmQ4OGQyZDg2OWMyY2JiMmFmMzU0ZiJ9LHsibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLm9jaS5pbWFnZS5sYXllci52MS50YXIrZ3ppcCIsInNpemUiOjE5NzIzODIxLCJkaWdlc3QiOiJzaGEyNTY6YTAyZjc4NTQ3MGJjYTMyY2U2Mjk2YTA1YmY1ODkwOGRlYmE3YWIxYzk0NzZkNGQyOGNkM2M5NzcyMGM1N2NkMSJ9LHsibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLm9jaS5pbWFnZS5sYXllci52MS50YXIrZ3ppcCIsInNpemUiOjE5NjMxMSwiZGlnZXN0Ijoic2hhMjU2OjU3Yjg3MDliNDI2ZGY5NmM3NmIwMjczNmZiY2MxYjMwYjlmZGQ2YjE3YTVmZDFiNDNlYzg5NjA5OGI2ZjJiODAifV0sImFubm90YXRpb25zIjp7ImRldi5jaGFpbmd1YXJkLmltYWdlLnRpdGxlIjoibm9kZSIsImRldi5jaGFpbmd1YXJkLnBhY2thZ2UubWFpbiI6Im5vZGVqcy0yNSIsIm9yZy5vcGVuY29udGFpbmVycy5pbWFnZS5hdXRob3JzIjoiQ2hhaW5ndWFyZCBUZWFtIGh0dHBzOi8vd3d3LmNoYWluZ3VhcmQuZGV2LyIsIm9yZy5vcGVuY29udGFpbmVycy5pbWFnZS5jcmVhdGVkIjoiMjAyNi0wMi0yMFQwMzo0MDozNFoiLCJvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2Uuc291cmNlIjoiaHR0cHM6Ly9naXRodWIuY29tL2NoYWluZ3VhcmQtaW1hZ2VzL2ltYWdlcy1wcml2YXRlL3RyZWUvbWFpbi9pbWFnZXMvbm9kZSIsIm9yZy5vcGVuY29udGFpbmVycy5pbWFnZS50aXRsZSI6Im5vZGUiLCJvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UudXJsIjoiaHR0cHM6Ly9pbWFnZXMuY2hhaW5ndWFyZC5kZXYvZGlyZWN0b3J5L2ltYWdlL25vZGUvb3ZlcnZpZXciLCJvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UudmVuZG9yIjoiQ2hhaW5ndWFyZCJ9fQ==",
+      "config": "eyJhcmNoaXRlY3R1cmUiOiJhbWQ2NCIsImF1dGhvciI6ImdpdGh1Yi5jb20vY2hhaW5ndWFyZC1kZXYvYXBrbyIsImNyZWF0ZWQiOiIyMDI2LTAyLTIwVDAzOjQwOjM0WiIsImhpc3RvcnkiOlt7ImF1dGhvciI6ImFwa28iLCJjcmVhdGVkIjoiMjAyNi0wMi0yMFQwMzo0MDozNFoiLCJjcmVhdGVkX2J5IjoiYXBrbyIsImNvbW1lbnQiOiJub2RlIGJ5IENoYWluZ3VhcmQifSx7ImF1dGhvciI6ImFwa28iLCJjcmVhdGVkIjoiMjAyNi0wMi0yMFQwMzo0MDozNFoiLCJjcmVhdGVkX2J5IjoiYXBrbyIsImNvbW1lbnQiOiJub2RlIGJ5IENoYWluZ3VhcmQifSx7ImF1dGhvciI6ImFwa28iLCJjcmVhdGVkIjoiMjAyNi0wMi0yMFQwMzo0MDozNFoiLCJjcmVhdGVkX2J5IjoiYXBrbyIsImNvbW1lbnQiOiJub2RlIGJ5IENoYWluZ3VhcmQifSx7ImF1dGhvciI6ImFwa28iLCJjcmVhdGVkIjoiMjAyNi0wMi0yMFQwMzo0MDozNFoiLCJjcmVhdGVkX2J5IjoiYXBrbyIsImNvbW1lbnQiOiJub2RlIGJ5IENoYWluZ3VhcmQifSx7ImF1dGhvciI6ImFwa28iLCJjcmVhdGVkIjoiMjAyNi0wMi0yMFQwMzo0MDozNFoiLCJjcmVhdGVkX2J5IjoiYXBrbyIsImNvbW1lbnQiOiJub2RlIGJ5IENoYWluZ3VhcmQifSx7ImF1dGhvciI6ImFwa28iLCJjcmVhdGVkIjoiMjAyNi0wMi0yMFQwMzo0MDozNFoiLCJjcmVhdGVkX2J5IjoiYXBrbyIsImNvbW1lbnQiOiJub2RlIGJ5IENoYWluZ3VhcmQifSx7ImF1dGhvciI6ImFwa28iLCJjcmVhdGVkIjoiMjAyNi0wMi0yMFQwMzo0MDozNFoiLCJjcmVhdGVkX2J5IjoiYXBrbyIsImNvbW1lbnQiOiJub2RlIGJ5IENoYWluZ3VhcmQifSx7ImF1dGhvciI6ImFwa28iLCJjcmVhdGVkIjoiMjAyNi0wMi0yMFQwMzo0MDozNFoiLCJjcmVhdGVkX2J5IjoiYXBrbyIsImNvbW1lbnQiOiJub2RlIGJ5IENoYWluZ3VhcmQifSx7ImF1dGhvciI6ImFwa28iLCJjcmVhdGVkIjoiMjAyNi0wMi0yMFQwMzo0MDozNFoiLCJjcmVhdGVkX2J5IjoiYXBrbyIsImNvbW1lbnQiOiJub2RlIGJ5IENoYWluZ3VhcmQifSx7ImF1dGhvciI6ImFwa28iLCJjcmVhdGVkIjoiMjAyNi0wMi0yMFQwMzo0MDozNFoiLCJjcmVhdGVkX2J5IjoiYXBrbyIsImNvbW1lbnQiOiJub2RlIGJ5IENoYWluZ3VhcmQifSx7ImF1dGhvciI6ImFwa28iLCJjcmVhdGVkIjoiMjAyNi0wMi0yMFQwMzo0MDozNFoiLCJjcmVhdGVkX2J5IjoiYXBrbyIsImNvbW1lbnQiOiJub2RlIGJ5IENoYWluZ3VhcmQifV0sIm9zIjoibGludXgiLCJyb290ZnMiOnsidHlwZSI6ImxheWVycyIsImRpZmZfaWRzIjpbInNoYTI1Njo0NmY4ODNlYjM4YTY5YTRjZDAyZjZkYWI2YTYyNTg1OTljODNlMWQ2ZDI5YjgxZjk1OGZhN2VhMDY5MDMwZWQ5Iiwic2hhMjU2OjEwYmNhZGI2MjNjODIyM2U0MjIxZTE2NGY0OTM2YzkyN2I0YzZiNTcyNzI4MTQwNWJkNDFhMWQyOGYxY2Q1MTciLCJzaGEyNTY6ZTNmZGY0ZTdmZjU0YTQ5NGJhMTBmZDUyYWRjY2RjODY2YTU0NTUwNGVkYTA1MTIyMWI1Yjk4NDc1NDU2MGQ1YSIsInNoYTI1NjoxYTA1MjlhN2RiOTE1NGIzMmFlZTg4Njk1NWUxZjQwOGIxMGVlYTc2Y2FkYTkwZjU3ZTA4OTFmOGI0OTJlZjcyIiwic2hhMjU2Ojg4NzM4NjJlNGFiM2E4MmMwZjkwNDgyZDg0Y2FiM2E4MWYwNWQ4ZGJkNzQ1YWQ5NDYyZTAwOWJlZTIzZGNlYzYiLCJzaGEyNTY6YjI4MTdmMGFkMDBjYThmMjlkNTNjYjEwZTczOTVlNDNiNDI1ZGQ5MTE0ZDA5ZGIzYzEzM2UxYzk0M2QzMjliOCIsInNoYTI1NjpiZDY4NTJhNGI1NTFiNGRlNWQyODFlZDFjZDZlOWVjNzRjMjIwYmU2ZGM5YTQ1ZTQwMmUyZTU4ZWI4YzM4N2MyIiwic2hhMjU2OmVlMTJkM2VlMTZmNDQwNmMyNmQxYzM3NWVhNWU3YjE3MmUxOWEwMzljMjg4NTVkOWViZTEwMDYxZGQ1MTc2NDMiLCJzaGEyNTY6YjM3MmIyMmEzMWM5ODdjNGRlNmNhNzEwZjk0ZmExMmEzMWE1OTFkMThmYWY0NDY0NDE4N2MxMDEyNzZkYzRjZiIsInNoYTI1NjozZGQ5NDI2NDkwODBiNWM1NTA0YmRkN2NkM2M0MmQ3MmE0MGI4M2IwOTM2MWU5OWQ2MGZjMmRkODc4YWQ0OTNkIiwic2hhMjU2OmJlZGY0YTM3ODcwOTRlM2NmNmI0OWQ4NGI3N2IwMDY1NDlmZmE2MWNmMmNjNzI1Yzc2NzZmMmNhYTZlYjdlNzkiXX0sImNvbmZpZyI6eyJDbWQiOlsiLS1oZWxwIl0sIkVudHJ5cG9pbnQiOlsiL3Vzci9iaW4vbm9kZSJdLCJFbnYiOlsiTlBNX0NPTkZJR19VUERBVEVfTk9USUZJRVI9ZmFsc2UiLCJQQVRIPS91c3IvbG9jYWwvc2JpbjovdXNyL2xvY2FsL2JpbjovdXNyL2JpbjovdXNyL3NiaW46L3NiaW46L2JpbiIsIlNTTF9DRVJUX0ZJTEU9L2V0Yy9zc2wvY2VydHMvY2EtY2VydGlmaWNhdGVzLmNydCJdLCJMYWJlbHMiOnsiZGV2LmNoYWluZ3VhcmQuaW1hZ2UudGl0bGUiOiJub2RlIiwiZGV2LmNoYWluZ3VhcmQucGFja2FnZS5tYWluIjoibm9kZWpzLTI1Iiwib3JnLm9wZW5jb250YWluZXJzLmltYWdlLmF1dGhvcnMiOiJDaGFpbmd1YXJkIFRlYW0gaHR0cHM6Ly93d3cuY2hhaW5ndWFyZC5kZXYvIiwib3JnLm9wZW5jb250YWluZXJzLmltYWdlLmNyZWF0ZWQiOiIyMDI2LTAyLTIwVDAzOjQwOjM0WiIsIm9yZy5vcGVuY29udGFpbmVycy5pbWFnZS5zb3VyY2UiOiJodHRwczovL2dpdGh1Yi5jb20vY2hhaW5ndWFyZC1pbWFnZXMvaW1hZ2VzLXByaXZhdGUvdHJlZS9tYWluL2ltYWdlcy9ub2RlIiwib3JnLm9wZW5jb250YWluZXJzLmltYWdlLnRpdGxlIjoibm9kZSIsIm9yZy5vcGVuY29udGFpbmVycy5pbWFnZS51cmwiOiJodHRwczovL2ltYWdlcy5jaGFpbmd1YXJkLmRldi9kaXJlY3RvcnkvaW1hZ2Uvbm9kZS9vdmVydmlldyIsIm9yZy5vcGVuY29udGFpbmVycy5pbWFnZS52ZW5kb3IiOiJDaGFpbmd1YXJkIn0sIlVzZXIiOiI2NTUzMiIsIldvcmtpbmdEaXIiOiIvYXBwIn19",
+      "repoDigests": [
+        "cgr.dev/chainguard-private/node@sha256:1e5ca9684e76da459d3774ce4331d378cfc2784b633493b0ac8604490c55ac6e"
+      ],
+      "architecture": "amd64",
+      "os": "linux",
+      "labels": {
+        "dev.chainguard.image.title": "node",
+        "dev.chainguard.package.main": "nodejs-25",
+        "org.opencontainers.image.authors": "Chainguard Team https://www.chainguard.dev/",
+        "org.opencontainers.image.created": "2026-02-20T03:40:34Z",
+        "org.opencontainers.image.source": "https://github.com/chainguard-images/images-private/tree/main/images/node",
+        "org.opencontainers.image.title": "node",
+        "org.opencontainers.image.url": "https://images.chainguard.dev/directory/image/node/overview",
+        "org.opencontainers.image.vendor": "Chainguard"
+      }
+    }
+  },
+  "distro": {
+    "name": "chainguard",
+    "version": "20230214",
+    "idLike": []
+  },
+  "descriptor": {
+    "name": "grype",
+    "version": "0.107.1",
+    "configuration": {
+      "output": [
+        "json"
+      ],
+      "file": "",
+      "pretty": false,
+      "distro": "",
+      "add-cpes-if-none": false,
+      "output-template-file": "",
+      "check-for-app-update": true,
+      "only-fixed": false,
+      "only-notfixed": false,
+      "ignore-wontfix": "",
+      "platform": "",
+      "search": {
+        "scope": "squashed",
+        "unindexed-archives": false,
+        "indexed-archives": true
+      },
+      "ignore": [
+        {
+          "vulnerability": "",
+          "include-aliases": false,
+          "reason": "",
+          "namespace": "",
+          "fix-state": "",
+          "package": {
+            "name": "kernel-headers",
+            "version": "",
+            "language": "",
+            "type": "rpm",
+            "location": "",
+            "upstream-name": "kernel"
+          },
+          "vex-status": "",
+          "vex-justification": "",
+          "match-type": "exact-indirect-match"
+        },
+        {
+          "vulnerability": "",
+          "include-aliases": false,
+          "reason": "",
+          "namespace": "",
+          "fix-state": "",
+          "package": {
+            "name": "linux(-.*)?-headers-.*",
+            "version": "",
+            "language": "",
+            "type": "deb",
+            "location": "",
+            "upstream-name": "linux.*"
+          },
+          "vex-status": "",
+          "vex-justification": "",
+          "match-type": "exact-indirect-match"
+        },
+        {
+          "vulnerability": "",
+          "include-aliases": false,
+          "reason": "",
+          "namespace": "",
+          "fix-state": "",
+          "package": {
+            "name": "linux-libc-dev",
+            "version": "",
+            "language": "",
+            "type": "deb",
+            "location": "",
+            "upstream-name": "linux"
+          },
+          "vex-status": "",
+          "vex-justification": "",
+          "match-type": "exact-indirect-match"
+        }
+      ],
+      "exclude": [],
+      "externalSources": {
+        "enable": false,
+        "maven": {
+          "searchUpstreamBySha1": true,
+          "baseUrl": "https://search.maven.org/solrsearch/select",
+          "rateLimit": 300000000
+        }
+      },
+      "match": {
+        "java": {
+          "using-cpes": false
+        },
+        "jvm": {
+          "using-cpes": true
+        },
+        "dotnet": {
+          "using-cpes": false
+        },
+        "golang": {
+          "using-cpes": false,
+          "always-use-cpe-for-stdlib": true,
+          "allow-main-module-pseudo-version-comparison": false
+        },
+        "javascript": {
+          "using-cpes": false
+        },
+        "python": {
+          "using-cpes": false
+        },
+        "ruby": {
+          "using-cpes": false
+        },
+        "rust": {
+          "using-cpes": false
+        },
+        "hex": {
+          "using-cpes": false
+        },
+        "stock": {
+          "using-cpes": true
+        },
+        "dpkg": {
+          "using-cpes": false,
+          "missing-epoch-strategy": "zero",
+          "use-cpes-for-eol": false
+        },
+        "rpm": {
+          "using-cpes": false,
+          "missing-epoch-strategy": "auto",
+          "use-cpes-for-eol": false
+        }
+      },
+      "fail-on-severity": "",
+      "registry": {
+        "insecure-skip-tls-verify": false,
+        "insecure-use-http": false,
+        "ca-cert": ""
+      },
+      "show-suppressed": false,
+      "by-cve": false,
+      "SortBy": {
+        "sort-by": "risk"
+      },
+      "name": "",
+      "default-image-pull-source": "registry",
+      "from": null,
+      "vex-documents": [],
+      "vex-add": [],
+      "match-upstream-kernel-headers": false,
+      "fix-channel": {
+        "redhat-eus": {
+          "apply": "auto",
+          "versions": ">= 8.0"
+        }
+      },
+      "timestamp": true,
+      "db": {
+        "cache-dir": "/home/josborne/.cache/grype/db",
+        "update-url": "https://grype.anchore.io/databases",
+        "ca-cert": "",
+        "auto-update": true,
+        "validate-by-hash-on-start": true,
+        "validate-age": true,
+        "max-allowed-built-age": 432000000000000,
+        "require-update-check": false,
+        "update-available-timeout": 30000000000,
+        "update-download-timeout": 300000000000,
+        "max-update-check-frequency": 7200000000000
+      },
+      "exp": {},
+      "dev": {
+        "db": {
+          "debug": false
+        }
+      }
+    },
+    "db": {
+      "status": {
+        "schemaVersion": "v6.1.4",
+        "from": "https://grype.anchore.io/databases/v6/vulnerability-db_v6.1.4_2026-02-20T16:19:46Z_1771654911.tar.zst?checksum=sha256%3Aaa126c17e9f71fa292b9b4666c952ab23b23dd70d60c870ece8e7bcb7b5323c0",
+        "built": "2026-02-21T06:21:51Z",
+        "path": "/home/josborne/.cache/grype/db/6/vulnerability.db",
+        "valid": true
+      },
+      "providers": {
+        "alma": {
+          "captured": "2026-02-21T00:29:46Z",
+          "input": "xxh64:1dd504698ddc1ccf"
+        },
+        "alpine": {
+          "captured": "2026-02-21T00:29:53Z",
+          "input": "xxh64:87f4c3c44df8266e"
+        },
+        "amazon": {
+          "captured": "2026-02-21T00:29:43Z",
+          "input": "xxh64:bb6801acf4e9df49"
+        },
+        "arch": {
+          "captured": "2026-02-21T00:29:50Z",
+          "input": "xxh64:b62cd65c24cc567e"
+        },
+        "bitnami": {
+          "captured": "2026-02-21T00:29:58Z",
+          "input": "xxh64:440d47381be19307"
+        },
+        "chainguard": {
+          "captured": "2026-02-21T00:30:00Z",
+          "input": "xxh64:e8c02da23093d7bc"
+        },
+        "chainguard-libraries": {
+          "captured": "2026-02-21T00:29:50Z",
+          "input": "xxh64:fc20343b760b4115"
+        },
+        "debian": {
+          "captured": "2026-02-21T00:29:57Z",
+          "input": "xxh64:f0a8eba3f92eafc8"
+        },
+        "echo": {
+          "captured": "2026-02-21T00:29:49Z",
+          "input": "xxh64:d51ea96e692d8239"
+        },
+        "eol": {
+          "captured": "2026-02-21T00:30:03Z",
+          "input": "xxh64:3169e533b8ffbc14"
+        },
+        "epss": {
+          "captured": "2026-02-21T00:29:48Z",
+          "input": "xxh64:c4a707a2d9f90fe1"
+        },
+        "fedora": {
+          "captured": "2026-02-21T00:30:02Z",
+          "input": "xxh64:516e82da051927f0"
+        },
+        "github": {
+          "captured": "2026-02-21T00:29:55Z",
+          "input": "xxh64:e02d20e6721df1e9"
+        },
+        "kev": {
+          "captured": "2026-02-21T00:29:55Z",
+          "input": "xxh64:be3f0dce0e26d698"
+        },
+        "mariner": {
+          "captured": "2026-02-21T00:29:44Z",
+          "input": "xxh64:fedf956cf343417f"
+        },
+        "minimos": {
+          "captured": "2026-02-21T00:30:06Z",
+          "input": "xxh64:136abadf38600fba"
+        },
+        "nvd": {
+          "captured": "2026-02-21T00:30:31Z",
+          "input": "xxh64:2080af300dc099d1"
+        },
+        "oracle": {
+          "captured": "2026-02-21T00:29:49Z",
+          "input": "xxh64:8d66ee8e27e23110"
+        },
+        "photon": {
+          "captured": "2026-02-21T00:30:04Z",
+          "input": "xxh64:b4673359eaa6a15c"
+        },
+        "rhel": {
+          "captured": "2026-02-21T00:30:34Z",
+          "input": "xxh64:5b7d4f56328ad75a"
+        },
+        "secureos": {
+          "captured": "2026-02-21T00:29:48Z",
+          "input": "xxh64:bb05664a120ae61e"
+        },
+        "sles": {
+          "captured": "2026-02-21T00:30:33Z",
+          "input": "xxh64:d2d0c24b73d4c132"
+        },
+        "ubuntu": {
+          "captured": "2026-02-20T16:19:46Z",
+          "input": "xxh64:7839d61b6ab10bc8"
+        },
+        "wolfi": {
+          "captured": "2026-02-21T00:29:57Z",
+          "input": "xxh64:ef64f7d2ca4dcd58"
+        }
+      }
+    },
+    "timestamp": "2026-02-21T19:15:46.543894631-05:00"
+  }
+}

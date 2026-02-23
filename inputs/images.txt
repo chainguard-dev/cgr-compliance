@@ -1,0 +1,7 @@
+# Images to scan
+# Python
+cgr.dev/chainguard-private/python:3.9.16
+# Nginx
+# cgr.dev/chainguard-private/nginx:latest-dev
+# Node
+# cgr.dev/chainguard-private/node:latest-dev
