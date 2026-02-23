@@ -1,0 +1,883 @@
+{
+  "matches": [
+    {
+      "vulnerability": {
+        "id": "CVE-2025-15366",
+        "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2025-15366",
+        "namespace": "nvd:cpe",
+        "severity": "Medium",
+        "urls": [
+          "https://github.com/python/cpython/commit/6262704b134db2a4ba12e85ecfbd968534f28b45",
+          "https://github.com/python/cpython/issues/143921",
+          "https://github.com/python/cpython/pull/143922",
+          "https://mail.python.org/archives/list/security-announce@python.org/thread/DD7C7JZJYTBXMDOWKCEIEBJLBRU64OMR/"
+        ],
+        "description": "The imaplib module, when passed a user-controlled command, can have additional commands injected using newlines. Mitigation rejects commands containing control characters.",
+        "cvss": [
+          {
+            "source": "cna@python.org",
+            "type": "Secondary",
+            "version": "4.0",
+            "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:H/UI:N/VC:L/VI:H/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+            "metrics": {
+              "baseScore": 5.9
+            },
+            "vendorMetadata": {}
+          }
+        ],
+        "epss": [
+          {
+            "cve": "CVE-2025-15366",
+            "epss": 0.00085,
+            "percentile": 0.2468,
+            "date": "2026-02-20"
+          }
+        ],
+        "cwes": [
+          {
+            "cve": "CVE-2025-15366",
+            "cwe": "CWE-77",
+            "source": "cna@python.org",
+            "type": "Secondary"
+          }
+        ],
+        "fix": {
+          "versions": [],
+          "state": "unknown"
+        },
+        "advisories": [],
+        "risk": 0.046325
+      },
+      "relatedVulnerabilities": [],
+      "matchDetails": [
+        {
+          "type": "cpe-match",
+          "matcher": "apk-matcher",
+          "searchedBy": {
+            "namespace": "nvd:cpe",
+            "cpes": [
+              "cpe:2.3:a:python:python:3.14.3:*:*:*:*:*:*:*"
+            ],
+            "package": {
+              "name": "python-3.14",
+              "version": "3.14.3-r1"
+            }
+          },
+          "found": {
+            "vulnerabilityID": "CVE-2025-15366",
+            "versionConstraint": "< 3.15.0 (unknown)",
+            "cpes": [
+              "cpe:2.3:a:python:python:*:*:*:*:*:*:*:*"
+            ]
+          }
+        }
+      ],
+      "artifact": {
+        "id": "a99eceaed5122113",
+        "name": "python-3.14",
+        "version": "3.14.3-r1",
+        "type": "apk",
+        "locations": [
+          {
+            "path": "/usr/lib/apk/db/installed",
+            "layerID": "sha256:2fc1ae89535b5690f9a02b9fd7e6b3acab17981f2d483addaab6119d2337e2ea",
+            "accessPath": "/usr/lib/apk/db/installed",
+            "annotations": {
+              "evidence": "primary"
+            }
+          }
+        ],
+        "language": "",
+        "licenses": [
+          "PSF-2.0"
+        ],
+        "cpes": [
+          "cpe:2.3:a:python-software-foundation:python-3.14:3.14.3-r1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python-software-foundation:python_3.14:3.14.3-r1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python_software_foundation:python-3.14:3.14.3-r1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python_software_foundation:python_3.14:3.14.3-r1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python-software-foundation:python:3.14.3-r1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python_software_foundation:python:3.14.3-r1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python-software:python-3.14:3.14.3-r1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python-software:python_3.14:3.14.3-r1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python_software:python-3.14:3.14.3-r1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python_software:python_3.14:3.14.3-r1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python-3.14:python-3.14:3.14.3-r1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python-3.14:python_3.14:3.14.3-r1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python_3.14:python-3.14:3.14.3-r1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python_3.14:python_3.14:3.14.3-r1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python-software:python:3.14.3-r1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python_software:python:3.14.3-r1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python-3.14:python:3.14.3-r1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python:python-3.14:3.14.3-r1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python:python_3.14:3.14.3-r1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python_3.14:python:3.14.3-r1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python:python:3.14.3-r1:*:*:*:*:*:*:*"
+        ],
+        "purl": "pkg:apk/chainguard/python-3.14@3.14.3-r1?arch=x86_64&distro=chainguard-20230214",
+        "upstreams": [
+          {
+            "name": "python-3.14"
+          }
+        ],
+        "metadataType": "ApkMetadata",
+        "metadata": {
+          "files": [
+            {
+              "path": "/usr"
+            },
+            {
+              "path": "/usr/bin"
+            },
+            {
+              "path": "/usr/bin/pydoc3"
+            },
+            {
+              "path": "/usr/bin/python"
+            },
+            {
+              "path": "/usr/bin/python3"
+            },
+            {
+              "path": "/usr/lib"
+            },
+            {
+              "path": "/usr/lib/python3.14"
+            },
+            {
+              "path": "/var"
+            },
+            {
+              "path": "/var/lib"
+            },
+            {
+              "path": "/var/lib/db"
+            },
+            {
+              "path": "/var/lib/db/sbom"
+            },
+            {
+              "path": "/var/lib/db/sbom/python-3.14-3.14.3-r1.spdx.json"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vulnerability": {
+        "id": "CVE-2025-15367",
+        "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2025-15367",
+        "namespace": "nvd:cpe",
+        "severity": "Medium",
+        "urls": [
+          "https://github.com/python/cpython/commit/b234a2b67539f787e191d2ef19a7cbdce32874e7",
+          "https://github.com/python/cpython/issues/143923",
+          "https://github.com/python/cpython/pull/143924",
+          "https://mail.python.org/archives/list/security-announce@python.org/thread/CBFBOWVGGUJFSGITQCCBZS4GEYYZ7ZNE/"
+        ],
+        "description": "The poplib module, when passed a user-controlled command, can have\nadditional commands injected using newlines. Mitigation rejects commands\ncontaining control characters.",
+        "cvss": [
+          {
+            "source": "cna@python.org",
+            "type": "Secondary",
+            "version": "4.0",
+            "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:H/UI:N/VC:L/VI:H/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+            "metrics": {
+              "baseScore": 5.9
+            },
+            "vendorMetadata": {}
+          }
+        ],
+        "epss": [
+          {
+            "cve": "CVE-2025-15367",
+            "epss": 0.00085,
+            "percentile": 0.2468,
+            "date": "2026-02-20"
+          }
+        ],
+        "cwes": [
+          {
+            "cve": "CVE-2025-15367",
+            "cwe": "CWE-77",
+            "source": "cna@python.org",
+            "type": "Secondary"
+          }
+        ],
+        "fix": {
+          "versions": [],
+          "state": "unknown"
+        },
+        "advisories": [],
+        "risk": 0.046325
+      },
+      "relatedVulnerabilities": [],
+      "matchDetails": [
+        {
+          "type": "cpe-match",
+          "matcher": "apk-matcher",
+          "searchedBy": {
+            "namespace": "nvd:cpe",
+            "cpes": [
+              "cpe:2.3:a:python:python:3.14.3:*:*:*:*:*:*:*"
+            ],
+            "package": {
+              "name": "python-3.14",
+              "version": "3.14.3-r1"
+            }
+          },
+          "found": {
+            "vulnerabilityID": "CVE-2025-15367",
+            "versionConstraint": "< 3.15.0 (unknown)",
+            "cpes": [
+              "cpe:2.3:a:python:python:*:*:*:*:*:*:*:*"
+            ]
+          }
+        }
+      ],
+      "artifact": {
+        "id": "a99eceaed5122113",
+        "name": "python-3.14",
+        "version": "3.14.3-r1",
+        "type": "apk",
+        "locations": [
+          {
+            "path": "/usr/lib/apk/db/installed",
+            "layerID": "sha256:2fc1ae89535b5690f9a02b9fd7e6b3acab17981f2d483addaab6119d2337e2ea",
+            "accessPath": "/usr/lib/apk/db/installed",
+            "annotations": {
+              "evidence": "primary"
+            }
+          }
+        ],
+        "language": "",
+        "licenses": [
+          "PSF-2.0"
+        ],
+        "cpes": [
+          "cpe:2.3:a:python-software-foundation:python-3.14:3.14.3-r1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python-software-foundation:python_3.14:3.14.3-r1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python_software_foundation:python-3.14:3.14.3-r1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python_software_foundation:python_3.14:3.14.3-r1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python-software-foundation:python:3.14.3-r1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python_software_foundation:python:3.14.3-r1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python-software:python-3.14:3.14.3-r1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python-software:python_3.14:3.14.3-r1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python_software:python-3.14:3.14.3-r1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python_software:python_3.14:3.14.3-r1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python-3.14:python-3.14:3.14.3-r1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python-3.14:python_3.14:3.14.3-r1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python_3.14:python-3.14:3.14.3-r1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python_3.14:python_3.14:3.14.3-r1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python-software:python:3.14.3-r1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python_software:python:3.14.3-r1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python-3.14:python:3.14.3-r1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python:python-3.14:3.14.3-r1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python:python_3.14:3.14.3-r1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python_3.14:python:3.14.3-r1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python:python:3.14.3-r1:*:*:*:*:*:*:*"
+        ],
+        "purl": "pkg:apk/chainguard/python-3.14@3.14.3-r1?arch=x86_64&distro=chainguard-20230214",
+        "upstreams": [
+          {
+            "name": "python-3.14"
+          }
+        ],
+        "metadataType": "ApkMetadata",
+        "metadata": {
+          "files": [
+            {
+              "path": "/usr"
+            },
+            {
+              "path": "/usr/bin"
+            },
+            {
+              "path": "/usr/bin/pydoc3"
+            },
+            {
+              "path": "/usr/bin/python"
+            },
+            {
+              "path": "/usr/bin/python3"
+            },
+            {
+              "path": "/usr/lib"
+            },
+            {
+              "path": "/usr/lib/python3.14"
+            },
+            {
+              "path": "/var"
+            },
+            {
+              "path": "/var/lib"
+            },
+            {
+              "path": "/var/lib/db"
+            },
+            {
+              "path": "/var/lib/db/sbom"
+            },
+            {
+              "path": "/var/lib/db/sbom/python-3.14-3.14.3-r1.spdx.json"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "vulnerability": {
+        "id": "CVE-2025-12781",
+        "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2025-12781",
+        "namespace": "nvd:cpe",
+        "severity": "Medium",
+        "urls": [
+          "https://github.com/python/cpython/commit/13360efd385d1a7d0659beba03787ea3d063ef9b",
+          "https://github.com/python/cpython/commit/1be80bec7960f5ccd059e75f3dfbd45fca302947",
+          "https://github.com/python/cpython/commit/9060b4abbe475591b6230b23c2afefeff26fcca5",
+          "https://github.com/python/cpython/commit/e95e783dff443b68e8179fdb57737025bf02ba76",
+          "https://github.com/python/cpython/commit/fd17ee026fa9b67f6288cbafe374a3e479fe03a5",
+          "https://github.com/python/cpython/issues/125346",
+          "https://github.com/python/cpython/pull/141128",
+          "https://mail.python.org/archives/list/security-announce@python.org/thread/KRI7GC6S27YV5NJ4FPDALS2WI5ENAFJ6/"
+        ],
+        "description": "When passing data to the b64decode(), standard_b64decode(), and urlsafe_b64decode() functions in the \"base64\" module the characters \"+/\" will always be accepted, regardless of the value of \"altchars\" parameter, typically used to establish an \"alternative base64 alphabet\" such as the URL safe alphabet. This behavior matches what is recommended in earlier base64 RFCs, but newer RFCs now recommend either dropping characters outside the specified base64 alphabet or raising an error. The old behavior has the possibility of causing data integrity issues.\n\n\n\n\nThis behavior can only be insecure if your application uses an alternate base64 alphabet (without \"+/\"). If your application does not use the \"altchars\" parameter or the urlsafe_b64decode() function, then your application does not use an alternative base64 alphabet.\n\n\n\n\nThe attached patches DOES NOT make the base64-decode behavior raise an error, as this would be a change in behavior and break existing programs. Instead, the patch deprecates the behavior which will be replaced with the newly recommended behavior in a future version of Python. Users are recommended to mitigate by verifying user-controlled inputs match the base64 \nalphabet they are expecting or verify that their application would not be \naffected if the b64decode() functions accepted \"+\" or \"/\" outside of altchars.",
+        "cvss": [
+          {
+            "source": "nvd@nist.gov",
+            "type": "Primary",
+            "version": "3.1",
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+            "metrics": {
+              "baseScore": 5.3,
+              "exploitabilityScore": 3.9,
+              "impactScore": 1.5
+            },
+            "vendorMetadata": {}
+          },
+          {
+            "source": "cna@python.org",
+            "type": "Secondary",
+            "version": "4.0",
+            "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+            "metrics": {
+              "baseScore": 6.3
+            },
+            "vendorMetadata": {}
+          }
+        ],
+        "epss": [
+          {
+            "cve": "CVE-2025-12781",
+            "epss": 0.00037,
+            "percentile": 0.10963,
+            "date": "2026-02-20"
+          }
+        ],
+        "cwes": [
+          {
+            "cve": "CVE-2025-12781",
+            "cwe": "CWE-704",
+            "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+            "type": "Secondary"
+          }
+        ],
+        "fix": {
+          "versions": [],
+          "state": "unknown"
+        },
+        "advisories": [],
+        "risk": 0.01998
+      },
+      "relatedVulnerabilities": [],
+      "matchDetails": [
+        {
+          "type": "cpe-match",
+          "matcher": "apk-matcher",
+          "searchedBy": {
+            "namespace": "nvd:cpe",
+            "cpes": [
+              "cpe:2.3:a:python:python:3.14.3:*:*:*:*:*:*:*"
+            ],
+            "package": {
+              "name": "python-3.14",
+              "version": "3.14.3-r1"
+            }
+          },
+          "found": {
+            "vulnerabilityID": "CVE-2025-12781",
+            "versionConstraint": "< 3.15.0 (unknown)",
+            "cpes": [
+              "cpe:2.3:a:python:python:*:*:*:*:*:*:*:*"
+            ]
+          }
+        }
+      ],
+      "artifact": {
+        "id": "a99eceaed5122113",
+        "name": "python-3.14",
+        "version": "3.14.3-r1",
+        "type": "apk",
+        "locations": [
+          {
+            "path": "/usr/lib/apk/db/installed",
+            "layerID": "sha256:2fc1ae89535b5690f9a02b9fd7e6b3acab17981f2d483addaab6119d2337e2ea",
+            "accessPath": "/usr/lib/apk/db/installed",
+            "annotations": {
+              "evidence": "primary"
+            }
+          }
+        ],
+        "language": "",
+        "licenses": [
+          "PSF-2.0"
+        ],
+        "cpes": [
+          "cpe:2.3:a:python-software-foundation:python-3.14:3.14.3-r1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python-software-foundation:python_3.14:3.14.3-r1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python_software_foundation:python-3.14:3.14.3-r1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python_software_foundation:python_3.14:3.14.3-r1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python-software-foundation:python:3.14.3-r1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python_software_foundation:python:3.14.3-r1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python-software:python-3.14:3.14.3-r1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python-software:python_3.14:3.14.3-r1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python_software:python-3.14:3.14.3-r1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python_software:python_3.14:3.14.3-r1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python-3.14:python-3.14:3.14.3-r1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python-3.14:python_3.14:3.14.3-r1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python_3.14:python-3.14:3.14.3-r1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python_3.14:python_3.14:3.14.3-r1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python-software:python:3.14.3-r1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python_software:python:3.14.3-r1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python-3.14:python:3.14.3-r1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python:python-3.14:3.14.3-r1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python:python_3.14:3.14.3-r1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python_3.14:python:3.14.3-r1:*:*:*:*:*:*:*",
+          "cpe:2.3:a:python:python:3.14.3-r1:*:*:*:*:*:*:*"
+        ],
+        "purl": "pkg:apk/chainguard/python-3.14@3.14.3-r1?arch=x86_64&distro=chainguard-20230214",
+        "upstreams": [
+          {
+            "name": "python-3.14"
+          }
+        ],
+        "metadataType": "ApkMetadata",
+        "metadata": {
+          "files": [
+            {
+              "path": "/usr"
+            },
+            {
+              "path": "/usr/bin"
+            },
+            {
+              "path": "/usr/bin/pydoc3"
+            },
+            {
+              "path": "/usr/bin/python"
+            },
+            {
+              "path": "/usr/bin/python3"
+            },
+            {
+              "path": "/usr/lib"
+            },
+            {
+              "path": "/usr/lib/python3.14"
+            },
+            {
+              "path": "/var"
+            },
+            {
+              "path": "/var/lib"
+            },
+            {
+              "path": "/var/lib/db"
+            },
+            {
+              "path": "/var/lib/db/sbom"
+            },
+            {
+              "path": "/var/lib/db/sbom/python-3.14-3.14.3-r1.spdx.json"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "source": {
+    "type": "image",
+    "target": {
+      "userInput": "cgr.dev/chainguard-private/python:latest-dev",
+      "imageID": "sha256:c2d5a00dce48807ef3acddfdfd6edd331bb6f784060d49e6069698848f4d9ee8",
+      "manifestDigest": "sha256:b6b3a018dce60057d68587f1deb28e0e9bcce784041d6d4a5f2a9e02b783a562",
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "tags": [],
+      "imageSize": 672173467,
+      "layers": [
+        {
+          "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+          "digest": "sha256:46f883eb38a69a4cd02f6dab6a6258599c83e1d6d29b81f958fa7ea069030ed9",
+          "size": 378628212
+        },
+        {
+          "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+          "digest": "sha256:e3fdf4e7ff54a494ba10fd52adccdc866a545504eda051221b5b984754560d5a",
+          "size": 62346983
+        },
+        {
+          "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+          "digest": "sha256:a6e0735b9bb071b8c72cad56d21a125241ae0ef8a5dca512a646e1a9048f454a",
+          "size": 61129829
+        },
+        {
+          "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+          "digest": "sha256:c7b5c59833d43b29c1cfac51c4d20d0990ca47ebf0bb9e14bd020429bb493f3d",
+          "size": 45154083
+        },
+        {
+          "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+          "digest": "sha256:91aae93e997769b1e4fd3e336cd774d230b1fdbc563029965216d87298f65b5a",
+          "size": 38010332
+        },
+        {
+          "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+          "digest": "sha256:b2817f0ad00ca8f29d53cb10e7395e43b425dd9114d09db3c133e1c943d329b8",
+          "size": 18482924
+        },
+        {
+          "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+          "digest": "sha256:e66e3d842a4d46f2a68768b7067123ef4acbe1637fadf82bb72bd8b8f61d8c54",
+          "size": 13099041
+        },
+        {
+          "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+          "digest": "sha256:c1260066afd5019bb9d0d54eccb583eb11d760ff6fb8d48443f34e05c209ab3b",
+          "size": 7578527
+        },
+        {
+          "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+          "digest": "sha256:b372b22a31c987c4de6ca710f94fa12a31a591d18faf44644187c101276dc4cf",
+          "size": 7268803
+        },
+        {
+          "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+          "digest": "sha256:a4a8c37f9d08fac55bf869179936ae072a02dd4bd61a7ca9a1efc512170a3fb3",
+          "size": 39988927
+        },
+        {
+          "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+          "digest": "sha256:2fc1ae89535b5690f9a02b9fd7e6b3acab17981f2d483addaab6119d2337e2ea",
+          "size": 485806
+        }
+      ],
+      "manifest": "eyJzY2hlbWFWZXJzaW9uIjoyLCJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQub2NpLmltYWdlLm1hbmlmZXN0LnYxK2pzb24iLCJjb25maWciOnsibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLm9jaS5pbWFnZS5jb25maWcudjEranNvbiIsInNpemUiOjI4MzYsImRpZ2VzdCI6InNoYTI1NjpjMmQ1YTAwZGNlNDg4MDdlZjNhY2RkZmRmZDZlZGQzMzFiYjZmNzg0MDYwZDQ5ZTYwNjk2OTg4NDhmNGQ5ZWU4In0sImxheWVycyI6W3sibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLm9jaS5pbWFnZS5sYXllci52MS50YXIrZ3ppcCIsInNpemUiOjE0MTMzMjU0NywiZGlnZXN0Ijoic2hhMjU2Ojk5MWRkZmFiOGI2MDQ5ZWQ3YWZlYzQ0MWJlNDE5YzE1ZTc3NDU0YjI0ZTlkYWQ1OGQwNDUxZWNlOGFkNmQ2NDgifSx7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5vY2kuaW1hZ2UubGF5ZXIudjEudGFyK2d6aXAiLCJzaXplIjoyNDAwMDg0OSwiZGlnZXN0Ijoic2hhMjU2OjU4ZjdkMGQzN2MwODljNTJjMDNhMjJjOWZkYjYzMTQ1ZmE0Y2I0ODYxNDQzZGU0ZDZjNThjZTYzNDNhNmY3OWQifSx7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5vY2kuaW1hZ2UubGF5ZXIudjEudGFyK2d6aXAiLCJzaXplIjoyNTM4ODk1NCwiZGlnZXN0Ijoic2hhMjU2OjEyNWYxOGM5MWJiMmYxZDdiNTg3MDNhYzRiYTRlODhhMDEwMjg1YTg1NmI0NjM5YmYyODI0Y2NmMWZjNjE5Y2IifSx7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5vY2kuaW1hZ2UubGF5ZXIudjEudGFyK2d6aXAiLCJzaXplIjoxODE0MDg4MywiZGlnZXN0Ijoic2hhMjU2OjYzMTg5YmJiZTI0OWI1OTk1MzAzODA0NTFkNGZiYjM1ZTM0OGU5OTE1ODM3M2VmMWU0ZTdiNzZmMzE1MDgxODMifSx7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5vY2kuaW1hZ2UubGF5ZXIudjEudGFyK2d6aXAiLCJzaXplIjoxMjk5NjE1MiwiZGlnZXN0Ijoic2hhMjU2OmM2ZGU3M2IzMGQ3MjQ1ZDJmOTA0OTk5NzUzYzQwMTMyOWVmNDVhZTM4ZmE2MDExNDZjNWViYzVmYzU5ZjRlMjMifSx7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5vY2kuaW1hZ2UubGF5ZXIudjEudGFyK2d6aXAiLCJzaXplIjo5MTk4MDExLCJkaWdlc3QiOiJzaGEyNTY6M2Q5NGRkY2ZkNjlhYjc4ZmQxMWI3YjFlNDI4MWMwNGMzZjU1MzgwY2VkYzg3MDRlMGNiMGRlZGY5ZjdkMTUxMiJ9LHsibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLm9jaS5pbWFnZS5sYXllci52MS50YXIrZ3ppcCIsInNpemUiOjU3NDE0OTEsImRpZ2VzdCI6InNoYTI1Njo0OTAwMzlhZmE3NDFmZTc2MDFmNzFjNTFkZDc1MmNkYzI0N2VkYmVjZDQyYWVjYzdkZTYwODA0ZjhmOGUyMDBjIn0seyJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQub2NpLmltYWdlLmxheWVyLnYxLnRhcitnemlwIiwic2l6ZSI6MjUwNzYyMiwiZGlnZXN0Ijoic2hhMjU2OmExNWI0ZjY2NGMzZTg4NzQ5ZTYzMzE4MDZkMzYzMTY5YjVhYTAyNzgzNjRiOGJkZGExNjJlODU5ZDUzY2JmZjUifSx7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5vY2kuaW1hZ2UubGF5ZXIudjEudGFyK2d6aXAiLCJzaXplIjoyMDMxMTEyLCJkaWdlc3QiOiJzaGEyNTY6ODZjNTM1YjNmNjIyNDViNGU1NWYwNTQ5Y2U3NjZhMzRjODBlNWMwYzM4YmQ4OGQyZDg2OWMyY2JiMmFmMzU0ZiJ9LHsibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLm9jaS5pbWFnZS5sYXllci52MS50YXIrZ3ppcCIsInNpemUiOjE2NjY1NTA4LCJkaWdlc3QiOiJzaGEyNTY6NTMwODZhYWY4NTNmZjAzMmRhY2Q0MTg0M2IyMjVjZGUyYTE2N2RlZmE2NjNiMjEyNTM3ODZlNDhmY2Q4MjBmZCJ9LHsibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLm9jaS5pbWFnZS5sYXllci52MS50YXIrZ3ppcCIsInNpemUiOjI0MDQ2OSwiZGlnZXN0Ijoic2hhMjU2Ojk5YzZlODM1YjQyOTYxZWUyNDY2NGExN2Y2NDE2NTdhODA3ZWQxMjliYTA3OTcwMmRhMDY4ZTM4YWVkOTUzYzAifV0sImFubm90YXRpb25zIjp7ImRldi5jaGFpbmd1YXJkLmltYWdlLnRpdGxlIjoicHl0aG9uIiwiZGV2LmNoYWluZ3VhcmQucGFja2FnZS5tYWluIjoicHl0aG9uLTMuMTQiLCJvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UuYXV0aG9ycyI6IkNoYWluZ3VhcmQgVGVhbSBodHRwczovL3d3dy5jaGFpbmd1YXJkLmRldi8iLCJvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UuY3JlYXRlZCI6IjIwMjYtMDItMTlUMTc6MTg6MDBaIiwib3JnLm9wZW5jb250YWluZXJzLmltYWdlLnNvdXJjZSI6Imh0dHBzOi8vZ2l0aHViLmNvbS9jaGFpbmd1YXJkLWltYWdlcy9pbWFnZXMtcHJpdmF0ZS90cmVlL21haW4vaW1hZ2VzL3B5dGhvbiIsIm9yZy5vcGVuY29udGFpbmVycy5pbWFnZS50aXRsZSI6InB5dGhvbiIsIm9yZy5vcGVuY29udGFpbmVycy5pbWFnZS51cmwiOiJodHRwczovL2ltYWdlcy5jaGFpbmd1YXJkLmRldi9kaXJlY3RvcnkvaW1hZ2UvcHl0aG9uL292ZXJ2aWV3Iiwib3JnLm9wZW5jb250YWluZXJzLmltYWdlLnZlbmRvciI6IkNoYWluZ3VhcmQifX0=",
+      "config": "eyJhcmNoaXRlY3R1cmUiOiJhbWQ2NCIsImF1dGhvciI6ImdpdGh1Yi5jb20vY2hhaW5ndWFyZC1kZXYvYXBrbyIsImNyZWF0ZWQiOiIyMDI2LTAyLTE5VDE3OjE4OjAwWiIsImhpc3RvcnkiOlt7ImF1dGhvciI6ImFwa28iLCJjcmVhdGVkIjoiMjAyNi0wMi0xOVQxNzoxODowMFoiLCJjcmVhdGVkX2J5IjoiYXBrbyIsImNvbW1lbnQiOiJweXRob24gYnkgQ2hhaW5ndWFyZCJ9LHsiYXV0aG9yIjoiYXBrbyIsImNyZWF0ZWQiOiIyMDI2LTAyLTE5VDE3OjE4OjAwWiIsImNyZWF0ZWRfYnkiOiJhcGtvIiwiY29tbWVudCI6InB5dGhvbiBieSBDaGFpbmd1YXJkIn0seyJhdXRob3IiOiJhcGtvIiwiY3JlYXRlZCI6IjIwMjYtMDItMTlUMTc6MTg6MDBaIiwiY3JlYXRlZF9ieSI6ImFwa28iLCJjb21tZW50IjoicHl0aG9uIGJ5IENoYWluZ3VhcmQifSx7ImF1dGhvciI6ImFwa28iLCJjcmVhdGVkIjoiMjAyNi0wMi0xOVQxNzoxODowMFoiLCJjcmVhdGVkX2J5IjoiYXBrbyIsImNvbW1lbnQiOiJweXRob24gYnkgQ2hhaW5ndWFyZCJ9LHsiYXV0aG9yIjoiYXBrbyIsImNyZWF0ZWQiOiIyMDI2LTAyLTE5VDE3OjE4OjAwWiIsImNyZWF0ZWRfYnkiOiJhcGtvIiwiY29tbWVudCI6InB5dGhvbiBieSBDaGFpbmd1YXJkIn0seyJhdXRob3IiOiJhcGtvIiwiY3JlYXRlZCI6IjIwMjYtMDItMTlUMTc6MTg6MDBaIiwiY3JlYXRlZF9ieSI6ImFwa28iLCJjb21tZW50IjoicHl0aG9uIGJ5IENoYWluZ3VhcmQifSx7ImF1dGhvciI6ImFwa28iLCJjcmVhdGVkIjoiMjAyNi0wMi0xOVQxNzoxODowMFoiLCJjcmVhdGVkX2J5IjoiYXBrbyIsImNvbW1lbnQiOiJweXRob24gYnkgQ2hhaW5ndWFyZCJ9LHsiYXV0aG9yIjoiYXBrbyIsImNyZWF0ZWQiOiIyMDI2LTAyLTE5VDE3OjE4OjAwWiIsImNyZWF0ZWRfYnkiOiJhcGtvIiwiY29tbWVudCI6InB5dGhvbiBieSBDaGFpbmd1YXJkIn0seyJhdXRob3IiOiJhcGtvIiwiY3JlYXRlZCI6IjIwMjYtMDItMTlUMTc6MTg6MDBaIiwiY3JlYXRlZF9ieSI6ImFwa28iLCJjb21tZW50IjoicHl0aG9uIGJ5IENoYWluZ3VhcmQifSx7ImF1dGhvciI6ImFwa28iLCJjcmVhdGVkIjoiMjAyNi0wMi0xOVQxNzoxODowMFoiLCJjcmVhdGVkX2J5IjoiYXBrbyIsImNvbW1lbnQiOiJweXRob24gYnkgQ2hhaW5ndWFyZCJ9LHsiYXV0aG9yIjoiYXBrbyIsImNyZWF0ZWQiOiIyMDI2LTAyLTE5VDE3OjE4OjAwWiIsImNyZWF0ZWRfYnkiOiJhcGtvIiwiY29tbWVudCI6InB5dGhvbiBieSBDaGFpbmd1YXJkIn1dLCJvcyI6ImxpbnV4Iiwicm9vdGZzIjp7InR5cGUiOiJsYXllcnMiLCJkaWZmX2lkcyI6WyJzaGEyNTY6NDZmODgzZWIzOGE2OWE0Y2QwMmY2ZGFiNmE2MjU4NTk5YzgzZTFkNmQyOWI4MWY5NThmYTdlYTA2OTAzMGVkOSIsInNoYTI1NjplM2ZkZjRlN2ZmNTRhNDk0YmExMGZkNTJhZGNjZGM4NjZhNTQ1NTA0ZWRhMDUxMjIxYjViOTg0NzU0NTYwZDVhIiwic2hhMjU2OmE2ZTA3MzViOWJiMDcxYjhjNzJjYWQ1NmQyMWExMjUyNDFhZTBlZjhhNWRjYTUxMmE2NDZlMWE5MDQ4ZjQ1NGEiLCJzaGEyNTY6YzdiNWM1OTgzM2Q0M2IyOWMxY2ZhYzUxYzRkMjBkMDk5MGNhNDdlYmYwYmI5ZTE0YmQwMjA0MjliYjQ5M2YzZCIsInNoYTI1Njo5MWFhZTkzZTk5Nzc2OWIxZTRmZDNlMzM2Y2Q3NzRkMjMwYjFmZGJjNTYzMDI5OTY1MjE2ZDg3Mjk4ZjY1YjVhIiwic2hhMjU2OmIyODE3ZjBhZDAwY2E4ZjI5ZDUzY2IxMGU3Mzk1ZTQzYjQyNWRkOTExNGQwOWRiM2MxMzNlMWM5NDNkMzI5YjgiLCJzaGEyNTY6ZTY2ZTNkODQyYTRkNDZmMmE2ODc2OGI3MDY3MTIzZWY0YWNiZTE2MzdmYWRmODJiYjcyYmQ4YjhmNjFkOGM1NCIsInNoYTI1NjpjMTI2MDA2NmFmZDUwMTliYjlkMGQ1NGVjY2I1ODNlYjExZDc2MGZmNmZiOGQ0ODQ0M2YzNGUwNWMyMDlhYjNiIiwic2hhMjU2OmIzNzJiMjJhMzFjOTg3YzRkZTZjYTcxMGY5NGZhMTJhMzFhNTkxZDE4ZmFmNDQ2NDQxODdjMTAxMjc2ZGM0Y2YiLCJzaGEyNTY6YTRhOGMzN2Y5ZDA4ZmFjNTViZjg2OTE3OTkzNmFlMDcyYTAyZGQ0YmQ2MWE3Y2E5YTFlZmM1MTIxNzBhM2ZiMyIsInNoYTI1NjoyZmMxYWU4OTUzNWI1NjkwZjlhMDJiOWZkN2U2YjNhY2FiMTc5ODFmMmQ0ODNhZGRhYWI2MTE5ZDIzMzdlMmVhIl19LCJjb25maWciOnsiRW50cnlwb2ludCI6WyIvdXNyL2Jpbi9weXRob24iXSwiRW52IjpbIlBBVEg9L3Vzci9sb2NhbC9zYmluOi91c3IvbG9jYWwvYmluOi91c3IvYmluOi91c3Ivc2Jpbjovc2JpbjovYmluIiwiU1NMX0NFUlRfRklMRT0vZXRjL3NzbC9jZXJ0cy9jYS1jZXJ0aWZpY2F0ZXMuY3J0Il0sIkxhYmVscyI6eyJkZXYuY2hhaW5ndWFyZC5pbWFnZS50aXRsZSI6InB5dGhvbiIsImRldi5jaGFpbmd1YXJkLnBhY2thZ2UubWFpbiI6InB5dGhvbi0zLjE0Iiwib3JnLm9wZW5jb250YWluZXJzLmltYWdlLmF1dGhvcnMiOiJDaGFpbmd1YXJkIFRlYW0gaHR0cHM6Ly93d3cuY2hhaW5ndWFyZC5kZXYvIiwib3JnLm9wZW5jb250YWluZXJzLmltYWdlLmNyZWF0ZWQiOiIyMDI2LTAyLTE5VDE3OjE4OjAwWiIsIm9yZy5vcGVuY29udGFpbmVycy5pbWFnZS5zb3VyY2UiOiJodHRwczovL2dpdGh1Yi5jb20vY2hhaW5ndWFyZC1pbWFnZXMvaW1hZ2VzLXByaXZhdGUvdHJlZS9tYWluL2ltYWdlcy9weXRob24iLCJvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UudGl0bGUiOiJweXRob24iLCJvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UudXJsIjoiaHR0cHM6Ly9pbWFnZXMuY2hhaW5ndWFyZC5kZXYvZGlyZWN0b3J5L2ltYWdlL3B5dGhvbi9vdmVydmlldyIsIm9yZy5vcGVuY29udGFpbmVycy5pbWFnZS52ZW5kb3IiOiJDaGFpbmd1YXJkIn0sIlVzZXIiOiI2NTUzMiJ9fQ==",
+      "repoDigests": [
+        "cgr.dev/chainguard-private/python@sha256:da2157ef3412c00200d2f86ecdccf52a9df5444b9d11fe80b880d89c93968c79"
+      ],
+      "architecture": "amd64",
+      "os": "linux",
+      "labels": {
+        "dev.chainguard.image.title": "python",
+        "dev.chainguard.package.main": "python-3.14",
+        "org.opencontainers.image.authors": "Chainguard Team https://www.chainguard.dev/",
+        "org.opencontainers.image.created": "2026-02-19T17:18:00Z",
+        "org.opencontainers.image.source": "https://github.com/chainguard-images/images-private/tree/main/images/python",
+        "org.opencontainers.image.title": "python",
+        "org.opencontainers.image.url": "https://images.chainguard.dev/directory/image/python/overview",
+        "org.opencontainers.image.vendor": "Chainguard"
+      }
+    }
+  },
+  "distro": {
+    "name": "chainguard",
+    "version": "20230214",
+    "idLike": []
+  },
+  "descriptor": {
+    "name": "grype",
+    "version": "0.107.1",
+    "configuration": {
+      "output": [
+        "json"
+      ],
+      "file": "",
+      "pretty": false,
+      "distro": "",
+      "add-cpes-if-none": false,
+      "output-template-file": "",
+      "check-for-app-update": true,
+      "only-fixed": false,
+      "only-notfixed": false,
+      "ignore-wontfix": "",
+      "platform": "",
+      "search": {
+        "scope": "squashed",
+        "unindexed-archives": false,
+        "indexed-archives": true
+      },
+      "ignore": [
+        {
+          "vulnerability": "",
+          "include-aliases": false,
+          "reason": "",
+          "namespace": "",
+          "fix-state": "",
+          "package": {
+            "name": "kernel-headers",
+            "version": "",
+            "language": "",
+            "type": "rpm",
+            "location": "",
+            "upstream-name": "kernel"
+          },
+          "vex-status": "",
+          "vex-justification": "",
+          "match-type": "exact-indirect-match"
+        },
+        {
+          "vulnerability": "",
+          "include-aliases": false,
+          "reason": "",
+          "namespace": "",
+          "fix-state": "",
+          "package": {
+            "name": "linux(-.*)?-headers-.*",
+            "version": "",
+            "language": "",
+            "type": "deb",
+            "location": "",
+            "upstream-name": "linux.*"
+          },
+          "vex-status": "",
+          "vex-justification": "",
+          "match-type": "exact-indirect-match"
+        },
+        {
+          "vulnerability": "",
+          "include-aliases": false,
+          "reason": "",
+          "namespace": "",
+          "fix-state": "",
+          "package": {
+            "name": "linux-libc-dev",
+            "version": "",
+            "language": "",
+            "type": "deb",
+            "location": "",
+            "upstream-name": "linux"
+          },
+          "vex-status": "",
+          "vex-justification": "",
+          "match-type": "exact-indirect-match"
+        }
+      ],
+      "exclude": [],
+      "externalSources": {
+        "enable": false,
+        "maven": {
+          "searchUpstreamBySha1": true,
+          "baseUrl": "https://search.maven.org/solrsearch/select",
+          "rateLimit": 300000000
+        }
+      },
+      "match": {
+        "java": {
+          "using-cpes": false
+        },
+        "jvm": {
+          "using-cpes": true
+        },
+        "dotnet": {
+          "using-cpes": false
+        },
+        "golang": {
+          "using-cpes": false,
+          "always-use-cpe-for-stdlib": true,
+          "allow-main-module-pseudo-version-comparison": false
+        },
+        "javascript": {
+          "using-cpes": false
+        },
+        "python": {
+          "using-cpes": false
+        },
+        "ruby": {
+          "using-cpes": false
+        },
+        "rust": {
+          "using-cpes": false
+        },
+        "hex": {
+          "using-cpes": false
+        },
+        "stock": {
+          "using-cpes": true
+        },
+        "dpkg": {
+          "using-cpes": false,
+          "missing-epoch-strategy": "zero",
+          "use-cpes-for-eol": false
+        },
+        "rpm": {
+          "using-cpes": false,
+          "missing-epoch-strategy": "auto",
+          "use-cpes-for-eol": false
+        }
+      },
+      "fail-on-severity": "",
+      "registry": {
+        "insecure-skip-tls-verify": false,
+        "insecure-use-http": false,
+        "ca-cert": ""
+      },
+      "show-suppressed": false,
+      "by-cve": false,
+      "SortBy": {
+        "sort-by": "risk"
+      },
+      "name": "",
+      "default-image-pull-source": "registry",
+      "from": null,
+      "vex-documents": [],
+      "vex-add": [],
+      "match-upstream-kernel-headers": false,
+      "fix-channel": {
+        "redhat-eus": {
+          "apply": "auto",
+          "versions": ">= 8.0"
+        }
+      },
+      "timestamp": true,
+      "db": {
+        "cache-dir": "/home/josborne/.cache/grype/db",
+        "update-url": "https://grype.anchore.io/databases",
+        "ca-cert": "",
+        "auto-update": true,
+        "validate-by-hash-on-start": true,
+        "validate-age": true,
+        "max-allowed-built-age": 432000000000000,
+        "require-update-check": false,
+        "update-available-timeout": 30000000000,
+        "update-download-timeout": 300000000000,
+        "max-update-check-frequency": 7200000000000
+      },
+      "exp": {},
+      "dev": {
+        "db": {
+          "debug": false
+        }
+      }
+    },
+    "db": {
+      "status": {
+        "schemaVersion": "v6.1.4",
+        "from": "https://grype.anchore.io/databases/v6/vulnerability-db_v6.1.4_2026-02-20T16:19:46Z_1771654911.tar.zst?checksum=sha256%3Aaa126c17e9f71fa292b9b4666c952ab23b23dd70d60c870ece8e7bcb7b5323c0",
+        "built": "2026-02-21T06:21:51Z",
+        "path": "/home/josborne/.cache/grype/db/6/vulnerability.db",
+        "valid": true
+      },
+      "providers": {
+        "alma": {
+          "captured": "2026-02-21T00:29:46Z",
+          "input": "xxh64:1dd504698ddc1ccf"
+        },
+        "alpine": {
+          "captured": "2026-02-21T00:29:53Z",
+          "input": "xxh64:87f4c3c44df8266e"
+        },
+        "amazon": {
+          "captured": "2026-02-21T00:29:43Z",
+          "input": "xxh64:bb6801acf4e9df49"
+        },
+        "arch": {
+          "captured": "2026-02-21T00:29:50Z",
+          "input": "xxh64:b62cd65c24cc567e"
+        },
+        "bitnami": {
+          "captured": "2026-02-21T00:29:58Z",
+          "input": "xxh64:440d47381be19307"
+        },
+        "chainguard": {
+          "captured": "2026-02-21T00:30:00Z",
+          "input": "xxh64:e8c02da23093d7bc"
+        },
+        "chainguard-libraries": {
+          "captured": "2026-02-21T00:29:50Z",
+          "input": "xxh64:fc20343b760b4115"
+        },
+        "debian": {
+          "captured": "2026-02-21T00:29:57Z",
+          "input": "xxh64:f0a8eba3f92eafc8"
+        },
+        "echo": {
+          "captured": "2026-02-21T00:29:49Z",
+          "input": "xxh64:d51ea96e692d8239"
+        },
+        "eol": {
+          "captured": "2026-02-21T00:30:03Z",
+          "input": "xxh64:3169e533b8ffbc14"
+        },
+        "epss": {
+          "captured": "2026-02-21T00:29:48Z",
+          "input": "xxh64:c4a707a2d9f90fe1"
+        },
+        "fedora": {
+          "captured": "2026-02-21T00:30:02Z",
+          "input": "xxh64:516e82da051927f0"
+        },
+        "github": {
+          "captured": "2026-02-21T00:29:55Z",
+          "input": "xxh64:e02d20e6721df1e9"
+        },
+        "kev": {
+          "captured": "2026-02-21T00:29:55Z",
+          "input": "xxh64:be3f0dce0e26d698"
+        },
+        "mariner": {
+          "captured": "2026-02-21T00:29:44Z",
+          "input": "xxh64:fedf956cf343417f"
+        },
+        "minimos": {
+          "captured": "2026-02-21T00:30:06Z",
+          "input": "xxh64:136abadf38600fba"
+        },
+        "nvd": {
+          "captured": "2026-02-21T00:30:31Z",
+          "input": "xxh64:2080af300dc099d1"
+        },
+        "oracle": {
+          "captured": "2026-02-21T00:29:49Z",
+          "input": "xxh64:8d66ee8e27e23110"
+        },
+        "photon": {
+          "captured": "2026-02-21T00:30:04Z",
+          "input": "xxh64:b4673359eaa6a15c"
+        },
+        "rhel": {
+          "captured": "2026-02-21T00:30:34Z",
+          "input": "xxh64:5b7d4f56328ad75a"
+        },
+        "secureos": {
+          "captured": "2026-02-21T00:29:48Z",
+          "input": "xxh64:bb05664a120ae61e"
+        },
+        "sles": {
+          "captured": "2026-02-21T00:30:33Z",
+          "input": "xxh64:d2d0c24b73d4c132"
+        },
+        "ubuntu": {
+          "captured": "2026-02-20T16:19:46Z",
+          "input": "xxh64:7839d61b6ab10bc8"
+        },
+        "wolfi": {
+          "captured": "2026-02-21T00:29:57Z",
+          "input": "xxh64:ef64f7d2ca4dcd58"
+        }
+      }
+    },
+    "timestamp": "2026-02-21T19:06:53.698155739-05:00"
+  }
+}
