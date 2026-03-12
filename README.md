@@ -1,7 +1,7 @@
 # cgr-compliance
 
-Auto Generate a FedRAMP SSP-Appendix-Q-Cryptographic-Modules-Table
-Auto Generate CVE related POA&Ms and FedRAMP KSIs
+- Auto Generate a FedRAMP SSP-Appendix-Q-Cryptographic-Modules-Table
+- Auto Generate CVE related POA&Ms and FedRAMP KSIs
 
 ## Auto Generate a FedRAMP SSP-Appendix-Q-Cryptographic-Modules-Table
 
