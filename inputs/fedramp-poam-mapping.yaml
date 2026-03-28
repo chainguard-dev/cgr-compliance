@@ -1,0 +1,33 @@
+poam_id: ""
+controls:
+  - RA-5
+  - SI-2 # include only if fix is available per Grype
+weakness_name: "Derived from formats/cwe-nist-mapping.csv"
+weakness_description: "Derived from formats/cwe-nist-mapping.csv"
+weakness_detector_source: "Derived from formats/cwe-nist-mapping.csv"
+weakness_source_identifier: "Derived from formats/cwe-nist-mapping.csv"
+asset_identifier: "All images, comma separated, containing this CVE ID cgr.dev/cgr-demo.com/nginx:latest (@sha256:123456)"
+point_of_contact: "Current Git user"
+resources_required: ""
+remediation_plan: >
+  If fix available: "Fix available, update required"
+  If no fix: "pending upstream fix"
+original_detection_date: "From NVD (CVE publication date)"
+scheduled_completion_date: >
+  If fix available: ""
+  If no fix: "pending upstream fix"
+status_date: "<today's date>"
+vendor_dependency: "Chainguard"
+last_vendor_checkin_date: ".created timestamp in the OCI config/manifest"
+vendor_dependent_product_name: "Chainguard Images"
+original_risk_rating: "NVD CVSS Score"
+adjusted_risk_rating: "NVD CVSS Score"
+risk_adjustment: "N/A"
+false_positive: "Scanner output used"
+operational_requirement: ""
+deviation_rationale: ""
+supporting_documents: "CHANGELOG generated from chainctl showing lateset 5 updates (command: $ chainctl images changelog cgr.dev/chainguard/nginx:latest --depth 5) if chanctl is not available/authenticated the this is empty"
+comments: ""
+binding_operational_directive_22_01_tracking: ""
+binding_operational_directive_22_01_due_date: ""
+cve: "CVE ID"
