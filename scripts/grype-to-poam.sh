@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 set -euo pipefail
 
@@ -8,19 +8,24 @@ nvd_base_url="https://services.nvd.nist.gov/rest/json/cves/2.0"
 cve_out_dir="output/vuln-data"
 nvd_out_dir="${cve_out_dir}/nvd/"
 grype_out_dir="${cve_out_dir}/grype/"
-poam_out_dir="output/poams"
+poam_out_dir="output/poam"
 cves=()
-cve_images=()
-cve_grype_paths=()
 images=()
 poam_id=1
-declare -A cve_asset_ids    # cve -> comma-separated asset identifiers across all images
-declare -A cve_first_grype  # cve -> grype JSON path for the first image that found it
+declare -A cve_asset_ids      # cve -> comma-separated asset identifiers across all images
+declare -A cve_first_grype    # cve -> grype JSON path for the first image that found it
+declare -A image_created_dates # image -> .created date from OCI config (cached per image)
+use_outputs_dir=false
+for arg in "$@"; do
+  [[ "$arg" == "--use-outputs-dir" ]] && use_outputs_dir=true
+done
 mkdir -p "$cve_out_dir" "$nvd_out_dir" "$grype_out_dir" "$poam_out_dir"
 
-if [[ -z "${NVD_API_KEY:-}" ]]; then
-  echo "Error: NVD_API_KEY environment variable is not set"
-  exit 1
+if [[ "$use_outputs_dir" == false ]]; then
+  if [[ -z "${NVD_API_KEY:-}" ]]; then
+    echo "Error: NVD_API_KEY environment variable is not set"
+    exit 1
+  fi
 fi
 
 if [[ ! -f "$INPUT_FILE" ]]; then
@@ -29,13 +34,18 @@ if [[ ! -f "$INPUT_FILE" ]]; then
 fi
 
 # Remove all files in the directories safely
-echo "Clearing the following directories: $nvd_out_dir, $poam_out_dir"
-find "$nvd_out_dir" -type f -exec rm -f {} +
-find "$poam_out_dir" -type f -exec rm -f {} +
+if [[ "$use_outputs_dir" == true ]]; then
+  echo "Clearing the following directories: $poam_out_dir"
+  find "$poam_out_dir" -type f -exec rm -f {} +
+else
+  echo "Clearing the following directories: $nvd_out_dir, $poam_out_dir"
+  find "$nvd_out_dir" -type f -exec rm -f {} +
+  find "$poam_out_dir" -type f -exec rm -f {} +
+fi
 
 # Generate the POA&M file with just the headers
 today=$(date +%F)
-poam_file="$poam_out_dir/FedRAMP-POAM-Template-$today.csv"
+poam_file="$poam_out_dir/chainguard-fedramp-poam.csv"
 cp "formats/FedRAMP-POAM-Template.csv" "$poam_file"
 
 while IFS= read -r line || [[ -n "$line" ]]; do
@@ -72,7 +82,7 @@ write_fedramp_poam() {
 
   # Pull all match fields for this CVE from the grype JSON
   local match_json
-  match_json=$(jq -c --arg cve "$cve" '.matches[]? | select(.vulnerability.id == $cve)' "$grype_json_path" | head -1)
+  match_json=$(jq -c --arg cve "$cve" 'first(.matches[]? | select(.vulnerability.id == $cve))' "$grype_json_path")
 
   local fix_state fix_version
   fix_state=$(echo "$match_json"   | jq -r '.vulnerability.fix.state // "unknown"')
@@ -86,11 +96,11 @@ write_fedramp_poam() {
   # Weakness Name, Description, Detector Source, Source Identifier — from CWE-NIST mapping
   # Prefer Primary (nvd@nist.gov) CWE; fall back to first available
   local cwe_id weakness_name weakness_description weakness_detector_source weakness_source_id
-  cwe_id=$(echo "$match_json" | jq -r '
-    ((.vulnerability.cwes // [])[] | select(.type == "Primary") | .cwe) //
-    ((.vulnerability.cwes // [])[0]?.cwe) //
+  cwe_id=$(echo "$match_json" | jq -r 'first(
+    ((.vulnerability.cwes // [])[] | select(.type == "Primary") | .cwe),
+    ((.vulnerability.cwes // [])[0]?.cwe),
     ""
-  ' | head -1)
+  )')
 
   weakness_name=""
   weakness_description=""
@@ -108,14 +118,10 @@ write_fedramp_poam() {
     fi
   fi
 
-  # Point of Contact: current git user
-  local poc
-  poc=$(git config user.name 2>/dev/null || git config user.email 2>/dev/null || echo "")
-
   # Remediation Plan and Scheduled Completion Date depend on fix availability
   local remediation scheduled_completion
   if [[ "$fix_state" == "fixed" ]]; then
-    remediation="Fix available, update required"
+    remediation="Fix available, update required: update to ${fix_version}"
     scheduled_completion=""
   else
     remediation="pending upstream fix"
@@ -141,19 +147,24 @@ write_fedramp_poam() {
   fi
   # Fall back to grype's NVD-sourced CVSS if NVD file is not available
   if [[ -z "$original_risk_rating" ]]; then
-    original_risk_rating=$(echo "$match_json" | jq -r '
-      ((.vulnerability.cvss // [])[] | select(.source == "nvd@nist.gov") | .metrics.baseScore) // ""
-    ' | head -1)
+    original_risk_rating=$(echo "$match_json" | jq -r 'first(
+      ((.vulnerability.cvss // [])[] | select(.source == "nvd@nist.gov") | .metrics.baseScore),
+      ""
+    )')
   fi
 
   # Adjusted Risk Rating: NVD CVSS base score (same source as Original Risk Rating per mapping)
   local adjusted_risk_rating="$original_risk_rating"
 
-  # Supporting Documents: chainctl changelog for this image
-  local first_image supporting_docs=""
+  # Last Vendor Check-in Date: .created timestamp from OCI image config (cached from image scan loop)
+  local first_image last_vendor_checkin
   first_image=$(jq -r '.source.target.userInput // ""' "$grype_json_path")
+  last_vendor_checkin="${image_created_dates[$first_image]:-$today}"
+
+  # Supporting Documents: chainctl changelog (latest 5 updates); empty if chainctl unavailable/unauthenticated
+  local supporting_docs=""
   if command -v chainctl &>/dev/null; then
-    supporting_docs=$(chainctl images diff "$first_image" 2>/dev/null | tr '\n' ' ' || true)
+    supporting_docs=$(chainctl images changelog "$first_image" --depth 5 2>/dev/null | tr '\n' ' ' || true)
   fi
 
   # POAM ID,Controls,Weakness Name,Weakness Description,Weakness Detector Source,
@@ -178,12 +189,12 @@ write_fedramp_poam() {
     "$(csv_escape "$scheduled_completion")" \
     "$(csv_escape "$today")" \
     "$(csv_escape "Chainguard")" \
-    "$(csv_escape "$today")" \
+    "$(csv_escape "$last_vendor_checkin")" \
     "$(csv_escape "Chainguard Images")" \
     "$(csv_escape "$original_risk_rating")" \
     "$(csv_escape "$adjusted_risk_rating")" \
     "$(csv_escape "N/A")" \
-    "$(csv_escape "Scanner output used")" \
+    "$(csv_escape "Grype")" \
     "$(csv_escape "")" \
     "$(csv_escape "")" \
     "$(csv_escape "$supporting_docs")" \
@@ -209,6 +220,9 @@ for image in "${images[@]}"; do
         grype "$image" --output=json 2>/dev/null | jq . > "$grype_json_path"
     fi
 
+    # Cache the OCI image .created date (used for Last Vendor Check-in Date)
+    image_created_dates["$image"]=$(crane config "$image" 2>/dev/null | jq -r '.created | split("T")[0]' 2>/dev/null || echo "$today")
+
     # Extract unique CVE IDs and track which image and grype file they came from
     # mapfile -t image_cves < <(echo "${grype_json}" | jq -r '
     # .matches[]?
@@ -226,8 +240,6 @@ for image in "${images[@]}"; do
 
     for cve in "${image_cves[@]}"; do
         cves+=("$cve")
-        cve_images+=("$image")
-        cve_grype_paths+=("$grype_json_path")
 
         # Build asset identifier: image:tag (@sha256:manifestDigest)
         manifest_digest=$(jq -r '.source.target.manifestDigest // ""' "$grype_json_path")
@@ -260,12 +272,15 @@ if [[ ${#cves[@]} -eq 0 ]]; then
     echo "-> No CVEs found in grype results. POA&M is empty"
     exit
 fi
-nvd_tmp_file="$(mktemp --suffix=.json)"
+nvd_tmp_file="$(mktemp -t nvd-tmp.XXXXXX).json"
 trap 'rm -f "$nvd_tmp_file"' EXIT
+
+# Point of Contact: current git user (constant for this run)
+poc=$(git config user.name 2>/dev/null || git config user.email 2>/dev/null || echo "")
 
 for cve in "${cves[@]}"; do
 
-    if [[ "$cve" == CVE-* ]]; then
+    if [[ "$cve" == CVE-* && "$use_outputs_dir" == false ]]; then
 
         api_url="$nvd_base_url?cveId=$cve"
         http_code=$(curl -sS -H "Accept: application/json" -H "apiKey: $NVD_API_KEY" -o "$nvd_tmp_file" -w "%{http_code}" "$api_url")
