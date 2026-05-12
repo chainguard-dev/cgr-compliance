@@ -30,3 +30,4 @@ chainctl images repos list --parent="$CGRREPO" -o json \
 
       rm -f "$file"
     done
+
