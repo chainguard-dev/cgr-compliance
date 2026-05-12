@@ -38,3 +38,5 @@ jq -r '
   printf '%s,%s,%s,%s\n' \
     "$IMAGE_SHORT_NAME" "$cert_url" "$supplier" "$module_name"
 done
+
+

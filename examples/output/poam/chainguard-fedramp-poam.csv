@@ -91,3 +91,5 @@ POAM ID,Controls,Weakness Name,Weakness Description,Weakness Detector Source,Wea
 "V-90","RA-5, SI-2","","","","CWE-754","cgr.dev/chainguard-private/python:3.9.16 (@sha256:20e196e85de2faaa9fd56f8246f073c5333c2aa5ffba2256d2022091b6aa3d09)","John Osborne","","Fix available, update required: update to 3.6.1-r0","","","2026-03-28","Chainguard","2026-03-28","Chainguard Images","","","N/A","Grype","","","","","","","CVE-2026-22795"
 "V-91","RA-5, SI-2","","","","CWE-754","cgr.dev/chainguard-private/python:3.9.16 (@sha256:20e196e85de2faaa9fd56f8246f073c5333c2aa5ffba2256d2022091b6aa3d09)","John Osborne","","Fix available, update required: update to 3.6.1-r0","","","2026-03-28","Chainguard","2026-03-28","Chainguard Images","","","N/A","Grype","","","","","","","CVE-2026-22796"
 "V-92","RA-5","","","","CWE-1284","cgr.dev/chainguard-private/python:3.9.16 (@sha256:20e196e85de2faaa9fd56f8246f073c5333c2aa5ffba2256d2022091b6aa3d09)","John Osborne","","pending upstream fix","","pending upstream fix","2026-03-28","Chainguard","2026-03-28","Chainguard Images","5.5","5.5","N/A","Grype","","","","","","","CVE-2026-27171"
+
+

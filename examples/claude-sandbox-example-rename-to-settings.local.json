@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash"
+    ]
+  },
+  "sandbox": {
+    "enabled": true,
+    "filesystem": {
+      "denyWrite": [
+        "."
+      ],
+      "allowWrite": [
+        "./scripts/grype-to-poam.sh"
+        "./output/poam/*"
+      ]
+    }
+  }
+}
+
+
