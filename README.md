@@ -79,13 +79,20 @@ The logic for filling in the controls column is as follows:
   * [FedRAMP Rev5 POA&M Template](https://www.fedramp.gov/resources/templates/FedRAMP-POAM-Template.xlsx)
   * [CMMC NIST 800-171 rev3](https://csrc.nist.gov/files/pubs/sp/800/171/r2/upd1/final/docs/cui-plan-of-action-template-final.docx)
   * [FedRAMP KSIs](https://raw.githubusercontent.com/FedRAMP/docs/refs/heads/main/tools/templates/FedRAMP.schema.json)
-* Misc
-  * You may notice the CMMC template is rev2 which aligns with [rev3 guidance to use the rev2 template](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.1318.pdf)
-  * CSPs serving DoD under DFARS 7012 may use the FedRAMP POA&M template
-    * https://dodcio.defense.gov/Portals/0/Documents/Library/FEDRAMP-EquivalencyCloudServiceProviders.pdf
-    * https://dodcio.defense.gov/Portals/0/Documents/CMMC/FedRAMP-AuthorizationEquivalency.pdf
-  * [DoD system owners should track CVE findings using eMASS](https://www.dcsa.mil/Portals/91/Documents/CTP/tools/NISP%20eMASS%20Industry%20Operation%20Guide%20Version%201.pdf)
-    * For users with a common access card (CAC) A POA&M Template is available in the “Help” section of eMASS
+* CMMC template still refers to rev2 which aligns with [rev3 guidance to use the rev2 template](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.1318.pdf)
+* CSPs serving DoD under DFARS 7012 may use the FedRAMP POA&M template
+  * https://dodcio.defense.gov/Portals/0/Documents/Library/FEDRAMP-EquivalencyCloudServiceProviders.pdf
+  * https://dodcio.defense.gov/Portals/0/Documents/CMMC/FedRAMP-AuthorizationEquivalency.pdf
+* [DoD system owners should track CVE findings using eMASS](https://www.dcsa.mil/Portals/91/Documents/CTP/tools/NISP%20eMASS%20Industry%20Operation%20Guide%20Version%201.pdf)
+  * For users with a common access card (CAC) A POA&M Template is available in the “Help” section of eMASS
+* Australian ISM & IRAP Overview
+  * The Australian Signals Directorate (ASD) defines its cybersecurity standard in the [AU Information Security Manual (ISM)](https://www.cyber.gov.au/business-government/asds-cyber-security-frameworks/ism/using-the-information-security-manual), which applies a risk-based approach [drawing from NIST SP 800-37 Rev. 2](https://www.cyber.gov.au/business-government/asds-cyber-security-frameworks/ism/using-the-information-security-manual). The Information Security Registered Assessors Program (IRAP) is ASD's assessment and certification program using the ISM as its benchmark. ISM is analogous to NIST 800-53 (high-level hardening / STIG controls) and IRAP is analogous to the 3PAO / assessor framework for evaluating compliance. Australia's adoption of the NIST risk management approach means POA&Ms are also required. This requirement is defined under ISM control ISM-1564 (Plan of action and milestones).
+  * The full list of applicable controls with mappings to applicable guidelines can be found in the [AU ASD System Security Plan Annex Template](https://www.cyber.gov.au/sites/default/files/2026-06/System%20security%20plan%20annex%20template%20%28June%202026%29.xlsx)
+  * Key ISM guideline references:
+    * [Guidelines for System Management](https://www.cyber.gov.au/business-government/asds-cyber-security-frameworks/ism/cyber-security-guidelines/guidelines-for-system-management) — covers patching-related security controls and requirements
+    * [Guidelines for Cyber Security Documentation](https://www.cyber.gov.au/business-government/asds-cyber-security-frameworks/ism/cyber-security-guidelines/guidelines-for-cyber-security-documentation) — covers continuous monitoring and POA&M controls
+  * No specific template or required fields exist for an ISM/IRAP POA&M, so this project does not include a separate template
+    * If a new template is needed to satisfy ISM-related POA&M or system management controls (e.g. vulnerability exploitation ISM controls), open a new ticket with your requirements
 
 ### Requirements
 
