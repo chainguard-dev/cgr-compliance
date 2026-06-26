@@ -95,8 +95,7 @@ The logic for filling in the controls column is as follows:
   * Key ISM guideline references:
     * [Guidelines for System Management](https://www.cyber.gov.au/business-government/asds-cyber-security-frameworks/ism/cyber-security-guidelines/guidelines-for-system-management) — covers patching-related security controls and requirements
     * [Guidelines for Cyber Security Documentation](https://www.cyber.gov.au/business-government/asds-cyber-security-frameworks/ism/cyber-security-guidelines/guidelines-for-cyber-security-documentation) — covers continuous monitoring and POA&M controls
-  * No specific template or required fields exist for an ISM/IRAP POA&M, so this project does not include a separate template
-    * If a new template is needed to satisfy ISM-related POA&M or system management controls (e.g. vulnerability exploitation ISM controls), open a new ticket with your requirements
+  * No specific template or required fields exist for an ISM/IRAP POA&M, so this project does not include a standalone template for these requirements. If a new template is needed to satisfy Australian ISM or IRAP related POA&M or system management controls (e.g. vulnerability exploitation ISM controls), open a new ticket with your requirements
 
 ### Requirements
 
